@@ -1,0 +1,33 @@
+# Ignore everything by default
+/*
+
+# Allow scratch and its subdirectories
+!/scratch/
+!/scratch/config/
+!/scratch/config/LTE_config/
+!/scratch/output/
+
+# Allow scratch_helpers
+!/scratch_helpers/
+
+# Allow only certain file types
+/scratch/*
+!/scratch/*.cc
+
+/scratch/config/*
+!/scratch/config/*.txt
+
+/scratch/config/LTE_config/*
+!/scratch/config/LTE_config/*.conf
+
+/scratch/output/*
+!/scratch/output/*.txt
+!/scratch/output/*.log
+
+/scratch_helpers/*
+!/scratch_helpers/*.cc
+!/scratch_helpers/*.h
+
+# Keep git metadata and ignore other hidden files
+!.gitignore
+!.gitattributes
